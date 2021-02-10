@@ -1,0 +1,33 @@
+INSTALAÇÃO DO AMBIENTE:
+========================================================
+Java 11 openJDK
+
+sudo add-apt-repository ppa:linuxuprising/java
+sudo apt update
+sudo apt install oracle-java10-installer (essa não deu certo)
+sudo apt-get install openjdk-11-jdk (essa a que deu certo)
+java --version (saber a versão instalada)
+sudo update-alternatives --config java (Saber o caminho do java instalado)
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java"
+export PATH=$JAVA_HOME/bin:$PATH
+java --version
+
+---------------------------------------------------------
+FERRAMENTAS DE BUILD:
+
+OBS:Serão baixadas duas ferramentas pois em projetos se usam uma e em outros usam a outra(Gradle e Maven).
+
+Gradle /install gradle/installing manually/download/binary-only
+Maven /download/binary zip archive
+
+IntellijIDE /download/comunity
+
+Instalação gradle (terminal):
+
+Pelo terminal, entrar na pasta download onde baixou o compactado.
+digitar o comando mkdir /opt/gradle (Criar uma pasta do diretório opt).
+unzip -d /opt/gradle gradle-6.8.2-bin.zip (descompacta e envia para a pasta destino informada. lembrando que é preciso estar no mesmo diretório do arquivo baixado).
+ls /opt/gradle/gradle-6.8.2
+LICENSE  NOTICE  bin  getting-started.html  init.d  lib  media
+export PATH=$PATH:/opt/gradle/gradle-6.8.2/bin (para exportar a pasta para bin)
+gradle -v (Informações da versão).
