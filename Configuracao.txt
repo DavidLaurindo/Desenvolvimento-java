@@ -31,7 +31,11 @@ digitar o comando mkdir /opt/gradle (Criar uma pasta do diretório opt).
 unzip -d /opt/gradle gradle-6.8.2-bin.zip (descompacta e envia para a pasta destino informada. lembrando que é preciso estar no mesmo diretório do arquivo baixado).
 ls /opt/gradle/gradle-6.8.2
 LICENSE  NOTICE  bin  getting-started.html  init.d  lib  media
-export PATH=$PATH:/opt/gradle/gradle-6.8.2/bin (para exportar a pasta para bin)
+
+export PATH=$PATH:/opt/gradle/gradle-6.8.2/bin (para exportar a pasta para bin mas toda vez que iniciar o terminal terá de fazer isso. a nao ser que faça o próximo comando.)
+
+entrar na pasta gradle-6.8.2 e usar o comando pwd para ver e copiar o caminho. depois, colar o caminho dentro do comando nano~/.bashrc e colar no final da página dentro do comando export PATH=$PATH:<CAMINHO COPIADO>/bin e depois salvar (CTRL + X)
+
 gradle -v (Informações da versão).
 
 *Instalação Maven:
@@ -47,4 +51,10 @@ Ferramentas de build wrapper para garantir o padrão de versão de software quan
 
 comando terminal:
 
-gradle wrapper (irá gerar arquivos de wrapper)
+Gradle wrapper:  
+
+entre na pasta que irá gerar o grandle wraper e digite o comando gradle wrapper no final do caminho ex: /opt/gradle/gradle-6.8.2/bin/gradle wrapper
+Irá gerar os arquivos necessários.
+
+maven wrapper:
+
