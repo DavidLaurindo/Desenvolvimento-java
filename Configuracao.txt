@@ -1,5 +1,5 @@
 INSTALAÇÃO DO AMBIENTE:
-========================================================
+==================================================================
 Java 11 openJDK
 
 sudo add-apt-repository ppa:linuxuprising/java
@@ -12,7 +12,7 @@ export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java"
 export PATH=$JAVA_HOME/bin:$PATH
 java --version
 
----------------------------------------------------------
+------------------------------------------------------------------
 FERRAMENTAS DE BUILD:
 
 OBS:Serão baixadas duas ferramentas pois em projetos se usam uma e em outros usam a outra(Gradle e Maven).
@@ -22,7 +22,9 @@ Maven /download/binary zip archive
 
 IntellijIDE /download/comunity
 
-Instalação gradle (terminal):
+------------------------------------------------------------------
+
+*Instalação gradle (terminal):
 
 Pelo terminal, entrar na pasta download onde baixou o compactado.
 digitar o comando mkdir /opt/gradle (Criar uma pasta do diretório opt).
@@ -32,10 +34,17 @@ LICENSE  NOTICE  bin  getting-started.html  init.d  lib  media
 export PATH=$PATH:/opt/gradle/gradle-6.8.2/bin (para exportar a pasta para bin)
 gradle -v (Informações da versão).
 
-Instalação Maven:
+*Instalação Maven:
 
 sudo mkdir /opt/maven (para criar a pasta em /opt)
 sudo unzip -d /opt/maven apache-maven-3.6.3-bin.zip
 export PATH=$PATH:/opt/maven/apache-maven-3.6.3/bin
 mvn -v
 
+------------------------------------------------------------------
+
+Ferramentas de build wrapper para garantir o padrão de versão de software quando estiver trabalhando em equipe.
+
+comando terminal:
+
+gradle wrapper (irá gerar arquivos de wrapper)
