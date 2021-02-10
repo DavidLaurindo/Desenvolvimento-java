@@ -55,6 +55,15 @@ Gradle wrapper:
 
 entre na pasta que irá gerar o grandle wraper e digite o comando gradle wrapper no final do caminho ex: /opt/gradle/gradle-6.8.2/bin/gradle wrapper
 Irá gerar os arquivos necessários.
+./gradlew -v para visualizar a versão (será a mesma do gradle original)
 
 maven wrapper:
+
+Na pasta onde vai criar os arquivos wrapper digite o código:
+mvn -N io.takari:maven:wrapper
+comando para ver a versão do maven wrapper (./mvnw -v) será a mesma versão do instalado.
+
+------------------------------------------------------------------
+
+Instalando o Intellij:
 
