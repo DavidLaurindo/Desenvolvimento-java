@@ -31,3 +31,11 @@ ls /opt/gradle/gradle-6.8.2
 LICENSE  NOTICE  bin  getting-started.html  init.d  lib  media
 export PATH=$PATH:/opt/gradle/gradle-6.8.2/bin (para exportar a pasta para bin)
 gradle -v (Informações da versão).
+
+Instalação Maven:
+
+sudo mkdir /opt/maven (para criar a pasta em /opt)
+sudo unzip -d /opt/maven apache-maven-3.6.3-bin.zip
+export PATH=$PATH:/opt/maven/apache-maven-3.6.3/bin
+mvn -v
+
