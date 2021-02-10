@@ -67,3 +67,5 @@ comando para ver a versão do maven wrapper (./mvnw -v) será a mesma versão do
 
 Instalando o Intellij:
 
+snap find "intellij"
+sudo snap install intellij-community --classic
