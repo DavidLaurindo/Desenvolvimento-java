@@ -69,3 +69,7 @@ Instalando o Intellij:
 
 snap find "intellij"
 sudo snap install intellij-community --classic
+
+------------------------------------------------------------------
+
+localhost:8080
